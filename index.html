@@ -6,87 +6,92 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+    <link rel="stylesheet" href="styles.css"/>
     <title>Frontend Mentor | News homepage</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
 </head>
 <body>
-    <nav>
-        Home
-        New
-        Popular
-        Trending
-        Categories
-    </nav>
+<header>
+    <img src="images/logo.svg" alt="w."/>
+    <div class="menu">
+        <img src="images/icon-menu.svg" alt="hamburger menu"/>
+        <img src="images/icon-menu-close.svg" alt="close"/>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+        </nav>
+    </div>
+
+</header>
 
 
-    <main>
 
-        <section class="feature">
-            <h1>The Bright Future of Web 3.0?</h1>
+<main>
 
-            <p>
-                We dive into the next evolution of the web that claims to put the power of the platforms back into the
-                hands of the
-                people. But is it really fulfilling its promise?
-            </p>
-            <button class="read-more">Read more</button>
-        </section>
+    <section class="feature">
+        <picture>
+        <source media="(min-width:650px)" srcset="images/image-web-3-desktop.jpg">
+        <img src="images/image-web-3-mobile.jpg" alt="The Bright Future of Web 3.0?" style="width:auto;">
+    </picture>
+        <h1>The Bright Future of Web 3.0?</h1>
+        <p>
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the
+            hands of the
+            people. But is it really fulfilling its promise?
+        </p>
+        <button class="read-more">Read more</button>
+    </section>
 
-        <section class="new">
-            <h2>New</h2>
-            <article>
-                <h3>Hydrogen VS Electric Cars</h3>
-                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-            </article>
+    <section class="new">
+        <h2>New</h2>
+        <article>
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
 
-            <article>
-                <h3>The Downsides of AI Artistry</h3>
-                <p>What are the possible adverse effects of on-demand AI image generation?</p>
-            </article>
+        <article>
+            <h3>The Downsides of AI Artistry</h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </article>
 
-            <article>
-                <h3>Is VC Funding Drying Up?</h3>
-                <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-            </article>
-        </section>
+        <article>
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </article>
+    </section>
 
-        <section class="posts">
-            <article>
+    <section class="posts">
+        <article>
+            <img src="images/image-retro-pcs.jpg" alt="Retro PC in blue-pink lighting"/>
+            <div class="content">
                 <span>01</span>
                 <h4>Reviving Retro PCs</h4>
                 <p>What happens when old PCs are given modern upgrades?</p>
-            </article>
-            <article>
+            </div>
+        </article>
+        <article>
+            <img src="images/image-top-laptops.jpg" alt="Close-up of laptop keys"/>
+            <div class="content">
                 <span>02</span>
                 <h4>Top 10 Laptops of 2022</h4>
                 <p>Our best picks for various needs and budgets.</p>
-            </article>
-            <article>
+            </div>
+        </article>
+        <article>
+            <img src="images/image-gaming-growth.jpg" alt="White gaming controller hovering above outstretched hand"/>
+            <div class="content">
                 <span>03</span>
                 <h4>The Growth of Gaming</h4>
                 <p>How the pandemic has sparked fresh opportunities.</p>
-            </article>
-        </section>
+            </div>
+        </article>
+    </section>
 
-    </main>
+</main>
 
 
-
-<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-</div>
 </body>
 </html>
