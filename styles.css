@@ -71,4 +71,33 @@ section.new article p {
   line-height: 1.8;
 }
 
+section.posts {
+  margin-top: 65px;
+}
+section.posts article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+section.posts article img {
+  width: 100px;
+  margin-right: 25px;
+}
+section.posts article .content span {
+  font-weight: 700;
+  color: hsl(233deg, 8%, 79%);
+  font-size: 2rem;
+}
+section.posts article .content h4 {
+  font-weight: 800;
+  color: hsl(240deg, 100%, 5%);
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+section.posts article .content p {
+  color: hsl(236deg, 13%, 42%);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 /*# sourceMappingURL=styles.css.map */
