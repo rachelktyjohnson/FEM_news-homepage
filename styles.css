@@ -21,8 +21,23 @@ header {
   align-items: center;
   padding: 30px 0;
 }
+@media (min-width: 600px) {
+  header {
+    max-width: 1110px;
+    margin-top: 90px;
+    padding: 0;
+  }
+}
 header img.logo {
   height: 30px;
+}
+@media (min-width: 600px) {
+  header img.logo {
+    height: 40px;
+  }
+}
+header .menu-icon {
+  display: none;
 }
 header .menu {
   display: flex;
@@ -36,6 +51,15 @@ header .menu {
   height: 100%;
   width: 260px;
 }
+@media (min-width: 600px) {
+  header .menu {
+    width: auto;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
 header .menu img {
   height: 30px;
   width: 30px;
@@ -43,19 +67,40 @@ header .menu img {
   top: 25px;
   right: 25px;
 }
+@media (min-width: 600px) {
+  header .menu img {
+    display: none;
+  }
+}
 header .menu nav {
   display: flex;
   flex-direction: column;
   margin-top: 85px;
 }
+@media (min-width: 600px) {
+  header .menu nav {
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
 header .menu nav a {
   text-decoration: none;
-  color: hsl(240deg, 100%, 5%);
+  color: #00001a;
   margin: 10px 0;
   font-size: 1.3rem;
 }
+@media (min-width: 600px) {
+  header .menu nav a {
+    font-size: 1.1rem;
+    margin: 0 20px;
+  }
+  header .menu nav a:hover {
+    color: #e9ab53;
+  }
+}
 
 .menu-overlay {
+  display: none;
   z-index: 99;
   background: rgba(0, 0, 0, 0.6);
   height: 100%;
@@ -87,7 +132,7 @@ section.feature p {
 }
 section.feature a.read-more {
   display: inline-block;
-  background: hsl(5deg, 85%, 63%);
+  background: #f15e50;
   padding: 15px 30px;
   text-transform: uppercase;
   font-weight: 700;
@@ -98,13 +143,13 @@ section.feature a.read-more {
 }
 
 section.new {
-  background: hsl(240deg, 100%, 5%);
+  background: #00001a;
   color: white;
   padding: 25px 25px 0 25px;
   margin: 25px 0;
 }
 section.new h2 {
-  color: hsl(35deg, 77%, 62%);
+  color: #e9ab53;
   font-size: 2rem;
   display: block;
 }
@@ -112,13 +157,13 @@ section.new article {
   padding: 30px 0;
 }
 section.new article + article {
-  border-top: 1px solid hsl(236deg, 13%, 42%);
+  border-top: 1px solid #5d5f79;
 }
 section.new article h3 {
   margin-bottom: 10px;
 }
 section.new article p {
-  color: hsl(233deg, 8%, 79%);
+  color: #c5c6ce;
   font-size: 0.9rem;
   line-height: 1.8;
 }
@@ -137,17 +182,17 @@ section.posts article img {
 }
 section.posts article .content span {
   font-weight: 700;
-  color: hsl(233deg, 8%, 79%);
+  color: #c5c6ce;
   font-size: 2rem;
 }
 section.posts article .content h4 {
   font-weight: 800;
-  color: hsl(240deg, 100%, 5%);
+  color: #00001a;
   margin: 10px 0;
   font-size: 1.1rem;
 }
 section.posts article .content p {
-  color: hsl(236deg, 13%, 42%);
+  color: #5d5f79;
   font-size: 0.95rem;
   line-height: 1.5;
 }
