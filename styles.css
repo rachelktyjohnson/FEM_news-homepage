@@ -229,6 +229,7 @@ section.new article p {
 
 section.posts {
   margin-top: 65px;
+  margin-bottom: 50px;
 }
 @media (min-width: 600px) {
   section.posts {
